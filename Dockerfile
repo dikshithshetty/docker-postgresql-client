@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM postgres:alpine
 
 ENV PG_MAJOR 9.5
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
